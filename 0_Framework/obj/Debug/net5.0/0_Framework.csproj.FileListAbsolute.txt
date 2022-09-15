@@ -1,0 +1,12 @@
+D:\DadmehrGostar\0_Framework\bin\Debug\net5.0\0_Framework.deps.json
+D:\DadmehrGostar\0_Framework\bin\Debug\net5.0\0_Framework.dll
+D:\DadmehrGostar\0_Framework\bin\Debug\net5.0\0_Framework.pdb
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfoInputs.cache
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfo.cs
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCompileInputs.cache
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.dll
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\refint\0_Framework.dll
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\0_Framework.pdb
+D:\DadmehrGostar\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
