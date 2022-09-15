@@ -10,5 +10,6 @@ namespace Files.Application.ProceedingSession
     {
         public string Date { get; set; }
         public string Time { get; set; }
+        public long Board_Id { get; set; }
     }
 }

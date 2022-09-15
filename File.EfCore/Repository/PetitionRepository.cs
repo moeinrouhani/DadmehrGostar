@@ -41,6 +41,8 @@ namespace File.EfCore.Repository
                 TotalPenalty = x.TotalPenalty,
                 TotalPenaltyTitles = x.TotalPenaltyTitles,
                 Description = x.Description,
+                Board_Id = x.Board_Id,
+                File_Id = x.File_Id,
             });
 
             //TODO if

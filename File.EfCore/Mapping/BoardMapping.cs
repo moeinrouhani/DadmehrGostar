@@ -21,6 +21,8 @@ namespace File.EfCore.Mapping
 
             builder.HasOne(x => x.File).WithMany(x => x.BoardsList).HasForeignKey(x => x.File_Id);
             builder.HasOne(x => x.BoardType).WithMany(x => x.BoardsList).HasForeignKey(x => x.BoardType_Id);
+            builder.HasMany(x => x.ProceedingSessionsList).WithOne(x => x.Board).HasForeignKey(x => x.Board_Id);
+            builder.HasMany(x => x.PetitionsList).WithOne(x => x.Board).HasForeignKey(x => x.Board_Id);
         }
     }
 }

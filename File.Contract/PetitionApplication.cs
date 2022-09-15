@@ -27,7 +27,7 @@ namespace File.Contract
             //    operation.Failed("fail message")
 
             var petition = new Petition(command.PetitionIssuanceDate, command.NotificationPetitionDate,
-                command.TotalPenalty, command.TotalPenaltyTitles, command.Description);
+                command.TotalPenalty, command.TotalPenaltyTitles, command.Description, command.Board_Id, command.File_Id);
             _petitionRepository.Create(petition);
             _petitionRepository.SaveChanges();
 
@@ -44,7 +44,7 @@ namespace File.Contract
             //    operation.Failed("fail message")
 
             petition.Edit(command.PetitionIssuanceDate, command.NotificationPetitionDate,
-                command.TotalPenalty, command.TotalPenaltyTitles, command.Description);
+                command.TotalPenalty, command.TotalPenaltyTitles, command.Description, command.Board_Id, command.File_Id);
             _petitionRepository.Create(petition);
             _petitionRepository.SaveChanges();
 

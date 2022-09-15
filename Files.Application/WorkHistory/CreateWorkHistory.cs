@@ -13,5 +13,6 @@ namespace Files.Application.WorkHistory
         public int WorkingHoursPerDay { get; set; }
         public int WorkingHoursPerWeek { get; set; }
         public string Description { get; set; }
+        public long Petition_Id { get; set; }
     }
 }

@@ -21,6 +21,7 @@ namespace File.Domain.File
             HasMandate = hasMandate;
             Description = description;
             BoardsList = new List<Board.Board>();
+            PetitionsList = new List<Petition.Petition>();
         }
 
         public long ArchiveNo { get; private set; }
@@ -32,7 +33,9 @@ namespace File.Domain.File
         public string FileClass { get; private set; }
         public bool HasMandate { get; private set; }
         public string Description { get; private set; }
+
         public List<Board.Board> BoardsList { get; set; }
+        public List<Petition.Petition> PetitionsList { get; set; }
 
         //public File()
         //{

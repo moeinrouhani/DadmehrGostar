@@ -9,13 +9,14 @@ namespace File.Domain.WorkHistory
 {
     public class WorkHistory : EntityBase
     {
-        public WorkHistory(DateTime fromDate, DateTime toDate, int workingHoursPerDay, int workingHoursPerWeek, string description)
+        public WorkHistory(DateTime fromDate, DateTime toDate, int workingHoursPerDay, int workingHoursPerWeek, string description, long petition_Id)
         {
             FromDate = fromDate;
             ToDate = toDate;
             WorkingHoursPerDay = workingHoursPerDay;
             WorkingHoursPerWeek = workingHoursPerWeek;
             Description = description;
+            Petition_Id = petition_Id;
         }
 
         public DateTime FromDate { get; private set; }
@@ -23,14 +24,17 @@ namespace File.Domain.WorkHistory
         public int WorkingHoursPerDay { get; private set; }
         public int WorkingHoursPerWeek { get; private set; }
         public string Description { get; private set; }
+        public long Petition_Id { get; private set; }
+        public Petition.Petition Petition { get; set; }
 
-        public void Edit(DateTime fromDate, DateTime toDate, int workingHoursPerDay, int workingHoursPerWeek, string description)
+        public void Edit(DateTime fromDate, DateTime toDate, int workingHoursPerDay, int workingHoursPerWeek, string description, long petition_Id)
         {
             FromDate = fromDate;
             ToDate = toDate;
             WorkingHoursPerDay = workingHoursPerDay;
             WorkingHoursPerWeek = workingHoursPerWeek;
             Description = description;
+            Petition_Id = petition_Id;
         }
     }
 }

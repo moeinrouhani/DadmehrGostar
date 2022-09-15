@@ -20,6 +20,7 @@ namespace File.EfCore.Mapping
             //add validations
 
             builder.HasMany(x => x.BoardsList).WithOne(x => x.File).HasForeignKey(x => x.File_Id);
+            builder.HasMany(x => x.PetitionsList).WithOne(x => x.File).HasForeignKey(x => x.File_Id);
         }
     }
 }

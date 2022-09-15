@@ -9,13 +9,14 @@ namespace File.Domain.PenaltyTitle
 {
     public class PenaltyTitle : EntityBase
     {
-        public PenaltyTitle(DateTime fromDate, DateTime toDate, string title, string day, string description)
+        public PenaltyTitle(DateTime fromDate, DateTime toDate, string title, string day, string description, long petition_Id)
         {
             FromDate = fromDate;
             ToDate = toDate;
             Title = title;
             Day = day;
             Description = description;
+            Petition_Id = petition_Id;
         }
 
         public DateTime FromDate { get; private set; }
@@ -23,14 +24,17 @@ namespace File.Domain.PenaltyTitle
         public string Title { get; private set; }
         public string Day { get; private set; }
         public string Description { get; private set; }
+        public long Petition_Id { get; private set; }
+        public Petition.Petition Petition { get; set; }
 
-        public void Edit(DateTime fromDate, DateTime toDate, string title, string day, string description)
+        public void Edit(DateTime fromDate, DateTime toDate, string title, string day, string description, long petition_Id)
         {
             FromDate = fromDate;
             ToDate = toDate;
             Title = title;
             Day = day;
             Description = description;
+            Petition_Id = petition_Id;
         }
     }
 }

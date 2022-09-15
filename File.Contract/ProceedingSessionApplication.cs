@@ -33,7 +33,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            var proSession = new ProceedingSession(Date,Time);
+            var proSession = new ProceedingSession(Date,Time,command.Board_Id);
             _proceedingSessionRepository.Create(proSession);
             _proceedingSessionRepository.SaveChanges();
 
@@ -55,7 +55,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            proSession.Edit(Date,Time);
+            proSession.Edit(Date,Time,command.Board_Id);
             _proceedingSessionRepository.SaveChanges();
 
             return operation.Succcedded();

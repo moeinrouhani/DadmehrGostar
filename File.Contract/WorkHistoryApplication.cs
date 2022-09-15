@@ -33,7 +33,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            var workHistory = new WorkHistory(fromDate, toDate, command.WorkingHoursPerDay, command.WorkingHoursPerWeek, command.Description);
+            var workHistory = new WorkHistory(fromDate, toDate, command.WorkingHoursPerDay, command.WorkingHoursPerWeek, command.Description,command.Petition_Id);
             _workHistoryRepository.Create(workHistory);
             _workHistoryRepository.SaveChanges();
 
@@ -55,7 +55,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            workHistory.Edit(fromDate, toDate, command.WorkingHoursPerDay, command.WorkingHoursPerWeek, command.Description);
+            workHistory.Edit(fromDate, toDate, command.WorkingHoursPerDay, command.WorkingHoursPerWeek, command.Description,command.Petition_Id);
             _workHistoryRepository.SaveChanges();
 
             return operation.Succcedded();

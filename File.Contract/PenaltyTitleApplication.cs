@@ -34,7 +34,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            var penaltyTitle = new PenaltyTitle(FromDate,ToDate,command.Title,command.Day,command.Description);
+            var penaltyTitle = new PenaltyTitle(FromDate,ToDate,command.Title,command.Day,command.Description,command.Petition_Id);
             _penaltyTitleRepository.Create(penaltyTitle);
             _penaltyTitleRepository.SaveChanges();
 
@@ -56,7 +56,7 @@ namespace File.Contract
             //if(_BoardRepository.Exists(x=>x.Branch == command.Branch))
             //    operation.Failed("fail message")
 
-            penaltyTitle.Edit(FromDate, ToDate, command.Title, command.Day, command.Description);
+            penaltyTitle.Edit(FromDate, ToDate, command.Title, command.Day, command.Description,command.Petition_Id);
             _penaltyTitleRepository.SaveChanges();
 
             return operation.Succcedded();
